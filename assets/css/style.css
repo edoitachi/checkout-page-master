@@ -1,0 +1,281 @@
+.container {
+	max-width: 500px;
+	margin: 2rem auto;
+	padding: 1rem;
+}
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+}
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		max-width: 992px;
+	}
+}
+@media (min-width: 1400px) {
+	.container {
+		max-width: 1320px;
+	}
+}
+.img-fluid {
+	width: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	overflow-x: hidden;
+}
+
+.title-main {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	color: #4e5150;
+	margin-bottom: 2rem;
+}
+.cart {
+	background: #f2f2f2;
+	border-radius: 12px;
+	padding: 2rem;
+}
+.cart .item {
+	display: flex;
+	margin-bottom: 1rem;
+}
+.cart .item .image {
+	max-width: 122.75px;
+}
+.cart .item .image img {
+	border-radius: 13px;
+}
+.cart .item .body {
+	margin-left: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 0.5rem;
+	max-width: 10rem;
+}
+.cart .item .body .name {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 15px;
+	color: #4e5150;
+	cursor: pointer;
+}
+.cart .item .body .price {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	color: #f2994a;
+	display: inline-block;
+	margin: 0.5rem 0;
+	margin-right: 0.5rem;
+}
+.cart .item .body .old-price {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 10px;
+	line-height: 12px;
+	text-decoration-line: line-through;
+	color: #4e5150;
+	display: inline-block;
+}
+.cart .item .body .quantity {
+	display: flex;
+	gap: 1rem;
+	border: 1px solid #828282;
+	border-radius: 12px;
+	padding: 1rem;
+	height: 3.5rem;
+	align-self: flex-end;
+}
+.cart .item .body .quantity .box {
+	background: #e0e0e0;
+	border-radius: 4px;
+	height: 19.39px;
+	width: 19.39px;
+	display: grid;
+	place-content: middle;
+	cursor: pointer;
+}
+.cart .item .body .quantity .box .material-icons-outlined {
+	font-size: 19px;
+	color: #828282;
+}
+.cart .item .body .quantity h3 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	color: #333333;
+}
+.cart .payment {
+	margin-top: 2rem;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	color: #333333;
+}
+.cart .payment .shipping {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid #bdbdbd;
+	border-bottom: 1px solid #bdbdbd;
+	padding: 1rem 0;
+}
+.cart .payment .total {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 0;
+}
+/* checkout form */
+.checkout section h4 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	color: #333333;
+	margin: 0.5rem 0;
+}
+.checkout section label {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 10px;
+	line-height: 12px;
+	display: block;
+	color: #4f4f4f;
+	margin: 0.5rem;
+}
+.input-field {
+	position: relative;
+}
+.input-field input {
+	border: 1px solid #828282;
+	height: 40.56px;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 12px;
+	font-weight: 600;
+	padding-left: 3rem;
+	font-family: Montserrat;
+}
+.input-field .material-icons {
+	position: absolute;
+	left: 1.2rem;
+	top: 1.7rem;
+	color: #828282;
+}
+.input-field input::placeholder {
+	font-family: Montserrat;
+	font-style: normal;
+	font-size: 12px;
+	line-height: 15px;
+	color: #828282;
+	font-weight: 600;
+	/* padding-left: 3rem; */
+}
+.checkout .split {
+	display: flex;
+	gap: 1rem;
+}
+.checkout .split .input-field {
+	width: 100%;
+}
+.checkout .split .input-field .material-icons {
+	top: 2.3rem;
+}
+
+.checkout section {
+	margin-top: 2rem;
+}
+.checkout .input-field {
+	margin: 1rem 0;
+}
+.save {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 1rem;
+	margin-left: 0.5rem;
+}
+#saveinfo {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 10px;
+	line-height: 12px;
+	color: #4f4f4f;
+}
+#submit-btn {
+	width: 166px;
+	height: 54px;
+	background: #f2994a;
+	border-radius: 12px;
+	border: none;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	color: #ffffff;
+	cursor: pointer;
+}
+.submit {
+	text-align: end;
+}
+@media (min-width: 768px) {
+	.main-split {
+		display: flex;
+		flex-flow: row-reverse;
+		gap: 2rem;
+		justify-content: space-between;
+	}
+	.cart {
+		height: 30rem;
+	}
+
+	/* font sizing */
+	.title-main {
+		font-size: 36px;
+		line-height: 44px;
+	}
+	.checkout section h4 {
+		font-size: 18px;
+	}
+	.checkout section label {
+		font-size: 12px;
+	}
+	.input-field input {
+		height: 56px;
+	}
+	.input-field .material-icons {
+		top: 2.2rem;
+	}
+	.checkout .split .input-field .material-icons {
+		top: 2.6rem;
+	}
+	#saveinfo {
+		font-size: 12px;
+	}
+}

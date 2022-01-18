@@ -1,95 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
 
-    <link rel="icon" href="devchallenges.png" />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/images/devchallenges.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
+  <title>Checkout Page Master</title>
+</head>
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="title-main">Checkout</h1>
     </div>
-  </body>
+    <div class="main-split">
+      <div class="cart">
+        <div class="item">
+          <div class="image">
+            <img src="assets/images/photo1.png" class="img-fluid" alt="vintage backpack">
+          </div>
+          <div class="body">
+            <div class="info">
+              <h4 class="name">Vintage Backpack</h4>
+              <h3 class="price">$54.99</h5>
+                <h5 class="old-price"><del>$94.99</del></h5>
+            </div>
+            <div class="quantity">
+              <div class="box">
+                <span class="material-icons-outlined">
+                  remove
+                </span>
+              </div>
+              <h3>5</h3>
+              <div class="box">
+                <span class="material-icons-outlined">
+                  add
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image">
+            <img src="assets/images/photo2.png" class="img-fluid" alt="levi shoes">
+          </div>
+          <div class="body">
+            <div class="info">
+              <h4 class="name">Levi Shoes</h4>
+              <h3 class="price">$74.99</h5>
+                <h5 class="old-price"><del>$124.99</del></h5>
+            </div>
+            <div class="quantity">
+              <div class="box">
+                <span class="material-icons-outlined">
+                  remove
+                </span>
+              </div>
+              <h3>1</h3>
+              <div class="box">
+                <span class="material-icons-outlined">
+                  add
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="payment">
+          <div class="shipping">
+            <h4>Shipping</h4>
+            <h4>$19</h4>
+          </div>
+          <div class="total">
+            <h4>Total</h4>
+            <h4>$148.98</h4>
+          </div>
+        </div>
+      </div>
+      <div class="checkout">
+        <form>
+          <section class="contact">
+            <h4>Contact Information</h4>
+            <div class="input-field">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" placeholder="Enter your email..." required>
+              <span class="material-icons">email</span>
+            </div>
+            <div class="input-field">
+              <label for="phone">Phone</label>
+              <input type="text" name="phone" placeholder="Enter your phone..." required>
+              <span class="material-icons">phone</span>
+            </div>
+          </section>
+          <section class="shipping">
+            <h4>Shipping Address</h4>
+            <div class="input-field">
+              <label for="fullname">Full Name</label>
+              <input type="text" name="fullname" placeholder="Rodney Cotton" required>
+              <span class="material-icons">account_circle</span>
+            </div>
+            <div class="input-field">
+              <label for="address">Address</label>
+              <input type="text" name="address" placeholder="Your Address..." required>
+              <span class="material-icons">home</span>
+            </div>
+            <div class="input-field">
+              <label for="city">City</label>
+              <input type="text" name="city" placeholder="Your City..." required>
+              <span class="material-icons">location_city</span>
+            </div>
+            <div class="split">
+              <div class="input-field">
+                <label for="country">Country</label>
+                <input type="text" name="country" placeholder="Your country" required>
+                <span class="material-icons">location_city</span>
+              </div>
+              <div class="input-field">
+                <label for="postalcode">Postal Code</label>
+                <input type="text" name="postalcode" placeholder="Your postal code" required>
+                <span class="material-icons">markunread_mailbox</span>
+              </div>
+            </div>
+          </section>
+          <div class="save">
+            <input type="checkbox" name="saveinfo">
+            <label for="saveinfo" id="saveinfo">Save this information for next time</label>
+          </div>
+          <div class="submit">
+            <input type="submit" value="Continue" id="submit-btn">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
